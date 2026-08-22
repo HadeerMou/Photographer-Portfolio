@@ -1,4 +1,4 @@
-# Alexa Moran — Photography Portfolio
+# Hadeer Mouwad — Photography Portfolio
 
 A Next.js (App Router) portfolio built around film/darkroom vernacular:
 sprocket-hole rails down the page edges, a viewfinder-style hero with an
