@@ -230,7 +230,7 @@ export default function ArchiveFilter() {
             </div>
             <button
               onClick={() => setActiveId(null)}
-              className="absolute -top-10 right-0 font-mono text-xs uppercase tracking-[0.16em] text-paper-dim hover:text-safelight md:-top-2 md:-right-12"
+              className="absolute right-2 top-2 rounded-sm bg-ink/70 px-2 py-1 font-mono text-xs uppercase tracking-[0.16em] text-paper-dim hover:text-safelight md:-right-12 md:-top-2 md:bg-transparent md:px-0 md:py-0"
               aria-label="Close"
             >
               Close ✕

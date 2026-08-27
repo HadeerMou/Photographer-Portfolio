@@ -4,29 +4,32 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="relative flex h-[100svh] min-h-[640px] w-full items-end overflow-hidden border-b border-graphite-light"
+      className="relative flex flex-col border-b border-graphite-light md:h-[100svh] md:min-h-[640px] md:items-end"
     >
-      <PlaceholderFrame
-        path="/photos/camera/DSC_3884.jpg"
-        tone="amber"
-        icon="aperture"
-        className="absolute inset-0"
-      />
-      <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-ink/60" />
-      {/* Viewfinder crosshair corners */}
-      <Corner className="left-6 top-24 border-l border-t md:left-14" />
-      <Corner className="right-6 top-24 border-r border-t md:right-14" />
-      <Corner className="bottom-40 left-6 border-b border-l md:left-14" />
-      <Corner className="bottom-40 right-6 border-b border-r md:right-14" />
+      {/* Photo — its own block on mobile, full-bleed background from md up */}
+      <div className="relative aspect-[4/3] w-full overflow-hidden md:absolute md:inset-0 md:aspect-auto">
+        <PlaceholderFrame
+          path="/photos/camera/DSC_3884.jpg"
+          tone="amber"
+          icon="aperture"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-ink/60" />
 
-      {/* Frame counter, top right — like a camera's shot count */}
-      <div className="absolute right-6 top-8 z-10 text-right font-mono text-[11px] uppercase tracking-[0.18em] text-paper-dim md:right-14">
-        <div>frame</div>
-        <div className="text-safelight">001 / 024</div>
+        {/* Viewfinder crosshair corners */}
+        <Corner className="left-4 top-4 border-l border-t md:left-14 md:top-24" />
+        <Corner className="right-4 top-4 border-r border-t md:right-14 md:top-24" />
+        <Corner className="bottom-4 left-4 border-b border-l md:bottom-40 md:left-14" />
+        <Corner className="bottom-4 right-4 border-b border-r md:bottom-40 md:right-14" />
+
+        {/* Frame counter, top right — like a camera's shot count */}
+        <div className="absolute right-4 top-4 z-10 text-right font-mono text-[11px] uppercase tracking-[0.18em] text-paper-dim md:right-14 md:top-8">
+          <div>frame</div>
+          <div className="text-safelight">001 / 024</div>
+        </div>
       </div>
 
-      {/* EXIF-style HUD, bottom */}
-      <div className="relative z-10 w-full px-6 pb-10 md:px-14 md:pb-14">
+      {/* EXIF-style HUD, content — flows below the photo on mobile, overlays it at the bottom from md up */}
+      <div className="relative z-10 w-full px-6 py-8 md:px-14 md:pb-14 md:pt-0">
         <div className="mb-6 flex flex-wrap gap-x-6 gap-y-1 font-mono text-[11px] uppercase tracking-[0.16em] text-paper-dim">
           <span>f/1.8</span>
           <span>1/250s</span>

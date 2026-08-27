@@ -53,6 +53,11 @@ html {
   }
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   background: var(--color-ink);
   color: var(--color-paper);
