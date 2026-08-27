@@ -1,5 +1,5 @@
 const socials = [
-  { label: "Instagram", href: "" },
+  { label: "Instagram", href: "https://www.instagram.com/h_pic" },
   { label: "Email", href: "mailto:hadeermouwad@gmail.com" },
   /* { label: "Behance", href: "https://behance.net" }, */
 ];
