@@ -1182,15 +1182,6 @@ export const archivePhotos: ArchivePhoto[] = [
     tone: "rust",
   },
   {
-    id: "p2-10",
-    frame: "202P-10",
-    source: "phone",
-    type: "Architecture Photography",
-    caption: "IMG_4963.JPG",
-    path: "/photos/mobile/Architecture%20Photography/IMG_4963.JPG",
-    tone: "graphite",
-  },
-  {
     id: "p2-11",
     frame: "202P-11",
     source: "phone",
@@ -1398,15 +1389,6 @@ export const archivePhotos: ArchivePhoto[] = [
     caption: "IMG_3719.jpeg",
     path: "/photos/mobile/Landscape%20Photography/IMG_3719.jpeg",
     tone: "rust",
-  },
-  {
-    id: "p3-22",
-    frame: "203P-22",
-    source: "phone",
-    type: "Landscape Photography",
-    caption: "IMG_3720.jpeg",
-    path: "/photos/mobile/Landscape%20Photography/IMG_3720.jpeg",
-    tone: "graphite",
   },
   {
     id: "p3-23",
