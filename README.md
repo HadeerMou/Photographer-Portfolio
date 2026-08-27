@@ -72,7 +72,12 @@ its real `path`, and set `featured: true` if it belongs on the home page.
    ```tsx
    import Image from "next/image";
    // ...
-   <Image src="/photos/002a.jpg" alt={photo.caption} fill className="object-cover" />
+   <Image
+     src="/photos/002a.jpg"
+     alt={photo.caption}
+     fill
+     className="object-cover"
+   />;
    ```
 
 4. For real BTS video, swap the placeholder for a `<video>` tag (with
