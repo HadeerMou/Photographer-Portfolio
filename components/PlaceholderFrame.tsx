@@ -12,11 +12,13 @@ export default function PlaceholderFrame({
   tone = "graphite",
   className = "",
   icon = "camera",
+  sizes = "(max-width: 768px) 50vw, 25vw",
 }: {
   path: string;
   tone?: keyof typeof TONES;
   className?: string;
   icon?: "camera" | "film" | "aperture";
+  sizes?: string;
 }) {
   const imagePath = path.startsWith("/") ? path : null;
   const videoPath =
@@ -41,7 +43,7 @@ export default function PlaceholderFrame({
           src={imagePath}
           alt=""
           fill
-          sizes="(max-width: 768px) 50vw, 25vw"
+          sizes={sizes}
           className="object-cover"
         />
       )}

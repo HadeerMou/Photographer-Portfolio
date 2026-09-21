@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="relative flex flex-col border-b border-graphite-light md:h-[100svh] md:min-h-[640px] md:items-end"
+      className="relative flex flex-col border-b border-graphite-light md:h-[100svh] md:min-h-[640px] md:justify-end"
     >
       {/* Photo — its own block on mobile, full-bleed background from md up */}
       <div className="relative aspect-[4/3] w-full overflow-hidden md:absolute md:inset-0 md:aspect-auto">
@@ -12,6 +12,7 @@ export default function Hero() {
           path="/photos/camera/DSC_3884.jpg"
           tone="amber"
           icon="aperture"
+          sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-ink/60" />
 
