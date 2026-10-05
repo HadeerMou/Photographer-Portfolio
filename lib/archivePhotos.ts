@@ -24,7 +24,7 @@ export const archivePhotos: ArchivePhoto[] = [
   // --- Camera ---
   {
     id: "p3-8",
-    frame: "203P-08",
+    frame: "203P-01",
     source: "phone",
     type: "Landscape Photography",
     caption: "IMG_1777.JPG",
@@ -35,7 +35,7 @@ export const archivePhotos: ArchivePhoto[] = [
   },
   {
     id: "c1-2",
-    frame: "101C-02",
+    frame: "101C-01",
     source: "camera",
     type: "Landscape Photography",
     caption: "DSC_3883.jpg",
@@ -44,7 +44,7 @@ export const archivePhotos: ArchivePhoto[] = [
   },
   {
     id: "c1-3",
-    frame: "101C-03",
+    frame: "101C-02",
     source: "camera",
     type: "Landscape Photography",
     caption: "DSC_3884.jpg",
@@ -53,7 +53,7 @@ export const archivePhotos: ArchivePhoto[] = [
   },
   {
     id: "c1-1",
-    frame: "101C-01",
+    frame: "101C-03",
     source: "camera",
     type: "Landscape Photography",
     caption: "DSC_3882.jpg",
@@ -691,7 +691,7 @@ export const archivePhotos: ArchivePhoto[] = [
   },
   {
     id: "p3-22",
-    frame: "203P-22",
+    frame: "203P-02",
     source: "phone",
     type: "Landscape Photography",
     caption: "IMG_3720.jpeg",
@@ -1201,7 +1201,7 @@ export const archivePhotos: ArchivePhoto[] = [
   },
   {
     id: "p3-1",
-    frame: "203P-01",
+    frame: "203P-03",
     source: "phone",
     type: "Landscape Photography",
     caption: "DJBB6081.JPG",
@@ -1210,7 +1210,7 @@ export const archivePhotos: ArchivePhoto[] = [
   },
   {
     id: "p3-2",
-    frame: "203P-02",
+    frame: "203P-04",
     source: "phone",
     type: "Landscape Photography",
     caption: "IMG_0945.JPG",
@@ -1219,7 +1219,7 @@ export const archivePhotos: ArchivePhoto[] = [
   },
   {
     id: "p3-3",
-    frame: "203P-03",
+    frame: "203P-05",
     source: "phone",
     type: "Landscape Photography",
     caption: "IMG_1020.jpeg",
@@ -1228,7 +1228,7 @@ export const archivePhotos: ArchivePhoto[] = [
   },
   {
     id: "p3-4",
-    frame: "203P-04",
+    frame: "203P-06",
     source: "phone",
     type: "Landscape Photography",
     caption: "IMG_1022.jpeg",
@@ -1237,7 +1237,7 @@ export const archivePhotos: ArchivePhoto[] = [
   },
   {
     id: "p3-5",
-    frame: "203P-05",
+    frame: "203P-07",
     source: "phone",
     type: "Landscape Photography",
     caption: "IMG_1221.JPG",
@@ -1246,7 +1246,7 @@ export const archivePhotos: ArchivePhoto[] = [
   },
   {
     id: "p3-6",
-    frame: "203P-06",
+    frame: "203P-08",
     source: "phone",
     type: "Landscape Photography",
     caption: "IMG_1613.JPG",
@@ -1255,7 +1255,7 @@ export const archivePhotos: ArchivePhoto[] = [
   },
   {
     id: "p3-7",
-    frame: "203P-07",
+    frame: "203P-09",
     source: "phone",
     type: "Landscape Photography",
     caption: "IMG_1619.JPG",
@@ -1274,7 +1274,7 @@ export const archivePhotos: ArchivePhoto[] = [
   },
   {
     id: "p3-9",
-    frame: "203P-09",
+    frame: "203P-10",
     source: "phone",
     type: "Landscape Photography",
     caption: "IMG_1800.JPG",
@@ -1283,7 +1283,7 @@ export const archivePhotos: ArchivePhoto[] = [
   },
   {
     id: "p3-10",
-    frame: "203P-10",
+    frame: "203P-11",
     source: "phone",
     type: "Landscape Photography",
     caption: "IMG_1801.JPG",
@@ -1292,7 +1292,7 @@ export const archivePhotos: ArchivePhoto[] = [
   },
   {
     id: "p3-11",
-    frame: "203P-11",
+    frame: "203P-12",
     source: "phone",
     type: "Landscape Photography",
     caption: "IMG_2278.JPG",
@@ -1301,7 +1301,7 @@ export const archivePhotos: ArchivePhoto[] = [
   },
   {
     id: "p3-12",
-    frame: "203P-12",
+    frame: "203P-13",
     source: "phone",
     type: "Landscape Photography",
     caption: "IMG_2313.JPG",
@@ -1311,7 +1311,7 @@ export const archivePhotos: ArchivePhoto[] = [
   },
   {
     id: "p3-13",
-    frame: "203P-13",
+    frame: "203P-14",
     source: "phone",
     type: "Landscape Photography",
     caption: "IMG_2317.JPG",
@@ -1320,7 +1320,7 @@ export const archivePhotos: ArchivePhoto[] = [
   },
   {
     id: "p3-14",
-    frame: "203P-14",
+    frame: "203P-15",
     source: "phone",
     type: "Landscape Photography",
     caption: "IMG_2364.JPG",
@@ -1329,7 +1329,7 @@ export const archivePhotos: ArchivePhoto[] = [
   },
   {
     id: "p3-15",
-    frame: "203P-15",
+    frame: "203P-16",
     source: "phone",
     type: "Landscape Photography",
     caption: "IMG_2365.JPG",
@@ -1338,7 +1338,7 @@ export const archivePhotos: ArchivePhoto[] = [
   },
   {
     id: "p3-16",
-    frame: "203P-16",
+    frame: "203P-17",
     source: "phone",
     type: "Landscape Photography",
     caption: "IMG_2437.JPG",
@@ -1347,7 +1347,7 @@ export const archivePhotos: ArchivePhoto[] = [
   },
   {
     id: "p3-17",
-    frame: "203P-17",
+    frame: "203P-18",
     source: "phone",
     type: "Landscape Photography",
     caption: "IMG_2571.JPG",
@@ -1356,7 +1356,7 @@ export const archivePhotos: ArchivePhoto[] = [
   },
   {
     id: "p3-18",
-    frame: "203P-18",
+    frame: "203P-19",
     source: "phone",
     type: "Landscape Photography",
     caption: "IMG_3172.JPG",
@@ -1365,7 +1365,7 @@ export const archivePhotos: ArchivePhoto[] = [
   },
   {
     id: "p3-19",
-    frame: "203P-19",
+    frame: "203P-20",
     source: "phone",
     type: "Landscape Photography",
     caption: "IMG_3344.JPG",
@@ -1374,7 +1374,7 @@ export const archivePhotos: ArchivePhoto[] = [
   },
   {
     id: "p3-20",
-    frame: "203P-20",
+    frame: "203P-21",
     source: "phone",
     type: "Landscape Photography",
     caption: "IMG_3435.JPG",
@@ -1383,7 +1383,7 @@ export const archivePhotos: ArchivePhoto[] = [
   },
   {
     id: "p3-21",
-    frame: "203P-21",
+    frame: "203P-22",
     source: "phone",
     type: "Landscape Photography",
     caption: "IMG_3719.jpeg",

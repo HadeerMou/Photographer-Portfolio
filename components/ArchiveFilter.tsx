@@ -82,6 +82,11 @@ export default function ArchiveFilter() {
     setPage(0);
   }
 
+  function goToPage(next: number) {
+    setPage(next);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
   return (
     <div>
       <div className="flex flex-col gap-8">
@@ -188,7 +193,7 @@ export default function ArchiveFilter() {
       {pageCount > 1 && (
         <div className="mt-8 flex items-center justify-center gap-4 font-mono text-xs uppercase tracking-[0.16em] text-paper-dim">
           <button
-            onClick={() => setPage((p) => Math.max(0, p - 1))}
+            onClick={() => goToPage(Math.max(0, currentPage - 1))}
             disabled={currentPage === 0}
             className="border border-graphite-light px-3 py-1.5 transition-colors hover:text-safelight disabled:cursor-not-allowed disabled:opacity-30"
           >
@@ -198,7 +203,7 @@ export default function ArchiveFilter() {
             {currentPage + 1} / {pageCount}
           </span>
           <button
-            onClick={() => setPage((p) => Math.min(pageCount - 1, p + 1))}
+            onClick={() => goToPage(Math.min(pageCount - 1, currentPage + 1))}
             disabled={currentPage >= pageCount - 1}
             className="border border-graphite-light px-3 py-1.5 transition-colors hover:text-safelight disabled:cursor-not-allowed disabled:opacity-30"
           >
