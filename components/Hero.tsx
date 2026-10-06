@@ -9,7 +9,7 @@ export default function Hero() {
       {/* Photo — its own block on mobile, full-bleed background from md up */}
       <div className="relative aspect-[4/3] w-full overflow-hidden md:absolute md:inset-0 md:aspect-auto">
         <PlaceholderFrame
-          path="/photos/camera/DSC_3884.jpg"
+          path="/photos/camera/Landscape%20Photography/DSC_3884.jpg"
           tone="amber"
           icon="aperture"
           sizes="100vw"

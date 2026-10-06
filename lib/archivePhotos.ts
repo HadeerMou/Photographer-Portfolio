@@ -41,7 +41,7 @@ export const archivePhotos: ArchivePhoto[] = [
     source: "camera",
     type: "Landscape Photography",
     caption: "DSC_3883.jpg",
-    path: "/photos/camera/DSC_3883.jpg",
+    path: "/photos/camera/Landscape%20Photography/DSC_3883.jpg",
     tone: "graphite",
   },
   {
@@ -50,7 +50,7 @@ export const archivePhotos: ArchivePhoto[] = [
     source: "camera",
     type: "Landscape Photography",
     caption: "DSC_3884.jpg",
-    path: "/photos/camera/DSC_3884.jpg",
+    path: "/photos/camera/Landscape%20Photography/DSC_3884.jpg",
     tone: "paper",
   },
   {
@@ -59,7 +59,7 @@ export const archivePhotos: ArchivePhoto[] = [
     source: "camera",
     type: "Landscape Photography",
     caption: "DSC_3882.jpg",
-    path: "/photos/camera/DSC_3882.jpg",
+    path: "/photos/camera/Landscape%20Photography/DSC_3882.jpg",
     tone: "rust",
     featured: true,
     span: "tall",
@@ -1059,7 +1059,7 @@ export const archivePhotos: ArchivePhoto[] = [
     source: "phone",
     type: "Animal Photography",
     caption: "IMG_1163.jpeg",
-    path: "/photos/mobile/IMG_1163.jpeg",
+    path: "/photos/mobile/Animal%20Photography/IMG_1163.jpeg",
     tone: "rust",
   },
   {
@@ -1068,7 +1068,7 @@ export const archivePhotos: ArchivePhoto[] = [
     source: "phone",
     type: "Animal Photography",
     caption: "IMG_1200.jpeg",
-    path: "/photos/mobile/IMG_1200.jpeg",
+    path: "/photos/mobile/Animal%20Photography/IMG_1200.jpeg",
     tone: "graphite",
   },
   {
@@ -1077,7 +1077,7 @@ export const archivePhotos: ArchivePhoto[] = [
     source: "phone",
     type: "Animal Photography",
     caption: "IMG_2436.jpeg",
-    path: "/photos/mobile/IMG_2436.jpeg",
+    path: "/photos/mobile/Animal%20Photography/IMG_2436.jpeg",
     tone: "paper",
   },
   {
@@ -1086,7 +1086,7 @@ export const archivePhotos: ArchivePhoto[] = [
     source: "phone",
     type: "Animal Photography",
     caption: "IMG_E0925.JPG",
-    path: "/photos/mobile/IMG_E0925.JPG",
+    path: "/photos/mobile/Animal%20Photography/IMG_E0925.JPG",
     tone: "amber",
   },
   {
@@ -1095,7 +1095,7 @@ export const archivePhotos: ArchivePhoto[] = [
     source: "phone",
     type: "Animal Photography",
     caption: "IMG_E0932.JPG",
-    path: "/photos/mobile/IMG_E0932.JPG",
+    path: "/photos/mobile/Animal%20Photography/IMG_E0932.JPG",
     tone: "rust",
     featured: true,
   },
