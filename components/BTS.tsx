@@ -1,12 +1,17 @@
 "use client";
 
+import { useState } from "react";
 import { btsItems } from "@/lib/bts";
 import PlaceholderFrame from "./PlaceholderFrame";
+import { preloadFullFrame } from "./FullFrame";
+import Lightbox from "./Lightbox";
 import { SectionHeading } from "./Gallery";
 import { useReveal } from "@/lib/useReveal";
 
 export default function BTS() {
   const containerRef = useReveal<HTMLDivElement>();
+  const [activeId, setActiveId] = useState<string | null>(null);
+  const active = btsItems.find((item) => item.id === activeId) ?? null;
 
   return (
     <section id="bts" className="relative border-b border-graphite-light bg-ink-raised px-6 py-24 md:px-14 md:py-32">
@@ -24,9 +29,13 @@ export default function BTS() {
 
       <div ref={containerRef} className="mt-14 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-3">
         {btsItems.map((item, i) => (
-          <div
+          <button
             key={item.id}
-            className="reveal group relative aspect-video overflow-hidden border border-graphite-light"
+            onClick={() => setActiveId(item.id)}
+            onMouseEnter={() => preloadFullFrame(item.path)}
+            onFocus={() => preloadFullFrame(item.path)}
+            aria-label={`Open ${item.title}`}
+            className="reveal group relative aspect-video overflow-hidden border border-graphite-light text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-safelight"
             style={{ transitionDelay: `${(i % 6) * 70}ms` }}
           >
             <PlaceholderFrame
@@ -61,9 +70,20 @@ export default function BTS() {
             <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/90 to-transparent p-3">
               <p className="font-body text-xs text-paper">{item.title}</p>
             </div>
-          </div>
+          </button>
         ))}
       </div>
+
+      {active && (
+        <Lightbox
+          path={active.path}
+          tone={active.tone}
+          label={active.title}
+          caption={<>{active.title} — {active.kind}</>}
+          meta={active.timecode}
+          onClose={() => setActiveId(null)}
+        />
+      )}
 
       <p className="mt-8 font-mono text-[10px] uppercase tracking-[0.14em] text-paper-dim">
         Swap files into <span className="text-safelight">/public/bts</span> and point each entry

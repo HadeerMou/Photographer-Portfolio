@@ -13,6 +13,8 @@ export type ArchivePhoto = {
   tone: "amber" | "rust" | "graphite" | "paper";
   /** Shown in the home page's curated "best of" gallery. */
   featured?: boolean;
+  /** Set to false to show a photo only in the home gallery, not the full archive. */
+  inArchive?: boolean;
   /** Grid span, only used by the home gallery's masonry layout. */
   span?: Span;
 };
@@ -1483,24 +1485,6 @@ export const archivePhotos: ArchivePhoto[] = [
     tone: "amber",
   },
   {
-    id: "p4-1",
-    frame: "204P-01",
-    source: "phone",
-    type: "Lifestyle Photography",
-    caption: "IMG_1141.jpeg",
-    path: "/photos/mobile/Lifestyle%20Photography/IMG_1141.jpeg",
-    tone: "rust",
-  },
-  {
-    id: "p4-2",
-    frame: "204P-02",
-    source: "phone",
-    type: "Lifestyle Photography",
-    caption: "IMG_1142.jpeg",
-    path: "/photos/mobile/Lifestyle%20Photography/IMG_1142.jpeg",
-    tone: "graphite",
-  },
-  {
     id: "p4-3",
     frame: "204P-03",
     source: "phone",
@@ -1509,33 +1493,7 @@ export const archivePhotos: ArchivePhoto[] = [
     path: "/photos/mobile/Lifestyle%20Photography/IMG_1908.JPG",
     tone: "paper",
     featured: true,
+    inArchive: false,
     span: "square",
-  },
-  {
-    id: "p4-4",
-    frame: "204P-04",
-    source: "phone",
-    type: "Lifestyle Photography",
-    caption: "IMG_4040.JPG",
-    path: "/photos/mobile/Lifestyle%20Photography/IMG_4040.JPG",
-    tone: "amber",
-  },
-  {
-    id: "p4-5",
-    frame: "204P-05",
-    source: "phone",
-    type: "Lifestyle Photography",
-    caption: "IMG_4897.JPG",
-    path: "/photos/mobile/Lifestyle%20Photography/IMG_4897.JPG",
-    tone: "rust",
-  },
-  {
-    id: "p4-6",
-    frame: "204P-06",
-    source: "phone",
-    type: "Lifestyle Photography",
-    caption: "IMG_7258.JPG",
-    path: "/photos/mobile/Lifestyle%20Photography/IMG_7258.JPG",
-    tone: "graphite",
   },
 ];

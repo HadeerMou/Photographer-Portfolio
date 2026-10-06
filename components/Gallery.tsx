@@ -1,8 +1,10 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { archivePhotos, type Span } from "@/lib/archivePhotos";
 import PlaceholderFrame from "./PlaceholderFrame";
+import { preloadFullFrame } from "./FullFrame";
+import Lightbox from "./Lightbox";
 import { useReveal } from "@/lib/useReveal";
 
 const spanClass: Record<Span, string> = {
@@ -16,15 +18,6 @@ export default function Gallery() {
   const containerRef = useReveal<HTMLDivElement>();
   const photos = useMemo(() => archivePhotos.filter((p) => p.featured), []);
   const active = photos.find((p) => p.id === activeId) ?? null;
-
-  useEffect(() => {
-    if (!active) return;
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setActiveId(null);
-    };
-    window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
-  }, [active]);
 
   return (
     <section id="work" className="relative border-b border-graphite-light px-6 py-24 md:px-14 md:py-32">
@@ -42,6 +35,8 @@ export default function Gallery() {
           <button
             key={photo.id}
             onClick={() => setActiveId(photo.id)}
+            onMouseEnter={() => preloadFullFrame(photo.path)}
+            onFocus={() => preloadFullFrame(photo.path)}
             className={`reveal group relative overflow-hidden border border-graphite-light text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-safelight ${spanClass[photo.span ?? "square"]}`}
             style={{ transitionDelay: `${(i % 8) * 60}ms` }}
           >
@@ -61,33 +56,14 @@ export default function Gallery() {
       </div>
 
       {active && (
-        <div
-          role="dialog"
-          aria-modal="true"
-          aria-label={`${active.caption}, frame ${active.frame}`}
-          className="fixed inset-0 z-50 flex items-center justify-center bg-ink/95 p-6 backdrop-blur-sm"
-          onClick={() => setActiveId(null)}
-        >
-          <div
-            className="relative w-full max-w-3xl"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="aspect-[4/5] w-full md:aspect-[3/2]">
-              <PlaceholderFrame path={active.path} tone={active.tone} icon="film" />
-            </div>
-            <div className="mt-4 flex items-center justify-between font-mono text-[11px] uppercase tracking-[0.16em] text-paper-dim">
-              <span>{active.caption} — {active.subtype ?? active.type}</span>
-              <span className="text-safelight">Frame {active.frame}</span>
-            </div>
-            <button
-              onClick={() => setActiveId(null)}
-              className="absolute right-2 top-2 rounded-sm bg-ink/70 px-2 py-1 font-mono text-xs uppercase tracking-[0.16em] text-paper-dim hover:text-safelight md:-right-12 md:-top-2 md:bg-transparent md:px-0 md:py-0"
-              aria-label="Close"
-            >
-              Close ✕
-            </button>
-          </div>
-        </div>
+        <Lightbox
+          path={active.path}
+          tone={active.tone}
+          label={`${active.caption}, frame ${active.frame}`}
+          caption={<>{active.caption} — {active.subtype ?? active.type}</>}
+          meta={<>Frame {active.frame}</>}
+          onClose={() => setActiveId(null)}
+        />
       )}
     </section>
   );

@@ -7,12 +7,15 @@ const TONES = {
   paper: "from-[#2c2a22] via-[#17160f] to-[#0a0a09]",
 };
 
+// Grid thumbnail sizes; the lightbox reuses them to hit the browser cache.
+export const THUMB_SIZES = "(max-width: 768px) 50vw, 25vw";
+
 export default function PlaceholderFrame({
   path,
   tone = "graphite",
   className = "",
   icon = "camera",
-  sizes = "(max-width: 768px) 50vw, 25vw",
+  sizes = THUMB_SIZES,
 }: {
   path: string;
   tone?: keyof typeof TONES;
